@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloudd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Biblioteca iconos bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">        
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body id="home">
+
+    <!--barnav-->
+    <header class="container-fluid header-my">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-my custom-text">
+
+          <div class="container-fluid">
+            <a href="#" class="logo">
+                      <img src="img/logo.png" alt="logopage" class="primary">
+                      <img src="img/logo2.png" alt="logopage" class="secondary">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 items-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                </li>                  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Tienda</a></li>
+                    <li><a class="dropdown-item" href="#">Foro</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Cursos</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 input-my" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+            
+      </nav>
+      <div class="header-content header-text">
+          <h1 class="titulo">Cuenta tu historia</h1>
+          <a href="#" class="cta">Empecemos →</a>
+      </div>
+    </header>
+ 
+    
+    <!-- cards -->
+    <section class="services">
+
+        <div> <h2 class="title-cards title-separator">Personaliza tu blog</h2> </div>
+        <div class="container">
+                        
+            <div class="card">
+                <figure class="thumb f_l_w_100 mb_60 mb_30_tablet">
+                    <img src="img/diseña.jpg" alt="Diseña tu blog">
+                </figure>
+                <div class="contenido">
+                    <h3>Diseña un espacio único</h3>
+                    <p>
+                        Transmite la personalidad de tu marca utilizando un paquete completo de recursos de diseño avanzados.
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="img/dominio.jpg" alt="Nombra tu dominio">
+                </figure>
+                <div class="contenido">
+                    <h3>Elige un nombre de dominio</h3>
+                    <p>
+                        Usa nombre de dominio personalizado reforzando la credibilidad de tu marca ganando mas visiblilidad.
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                    <img src="img/Contenido.jpg" alt="Contenido personalizable">
+                </figure>
+                <div class="contenido">
+                    <h3>Crea y personaliza el contenido</h3>
+                    <p>
+                        Publica contenido único con un editor de texto enriquecido, herramientas de video y audio dale tu toque personal.
+                    </p>
+                    <a href="#">Leer mas</a>
+                </div>
+            </div>              
+        </div>
+
+        <div class="link-registro">
+          <a href="#" class="cta">Crear blog →</a>
+        </div>
+    
+    </section>
+
+    
+
+    <!-- carousel -->
+    <section class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active carousel_img">
+                <img src="img/carousel_1.jpg" class="d-block w-100" alt="Utiles">
+              </div>
+              <div class="carousel-item carousel_img">
+                <img src="img/carousel_2.jpg" class="d-block w-100" alt="Escritorio">
+              </div>
+              <div class="carousel-item carousel_img">
+                <img src="img/carousel_3.jpg" class="d-block w-100" alt="Redes sociales">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+    </section>
+
+    <!--about-->
+    <section class="about">
+      <div class="container">
+          <div class="contentblock">
+              <div class="imageblock">
+                  <img src="/img/imgabout.jpg" alt="Creacion de blog" class="img_basic">
+              </div>
+              <div class="text">
+                  <h2 class="text_center title-separator">Acerca de nosostros</h2>
+                  <p>
+                      Somos un grupo de estudiantes del area de programacion de software, que busca aprender nuevas habilidades e ir puliendo sus habilidades por medio de diferentes ejercicios practicos, acompañanos a lo largo de este camino.
+                  </p>
+              </div>
+          </div>
+      </div>
+
+    </section>
+
+    <!--contacto-->
+    <section id="contact" class="contact">
+      <h2 class="title-separator">Contacto</h2>
+
+      <div class="container">
+          
+  
+          <div class="contact-form">
+              <form method="post" action="#">
+                  <input type="text" name="name" placeholder="Nombre">
+                  <input type="email" name="email" placeholder="Correo electrónico">
+                  <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                  <button type="submit">Enviar</button>
+              </form>
+          </div>
+  
+      </div>
+    </section>
+    
+    <!--footer-->
+    <footer class=>
+        <div class="footerbar">
+                <div class="social-container">
+                    <ul>                    
+                        <li><a href="https://www.facebook.com" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://co.linkedin.com/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/js/javascript.js"></script>
+  
+  </body>
+</html>

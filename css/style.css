@@ -1,0 +1,467 @@
+main.screen {
+    max-width: 2200px;
+    padding: 40px;
+}
+
+* {
+    /*  resetear los elementos  */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  marquen y padding no ocupan espacio */
+}
+
+:root {
+    /*  crear variables --nombre: contenido */
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077b5;
+}
+
+main.screen {
+    max-width: 2200px;
+    padding: 40px;
+}
+
+/* Header */
+.header-my {
+    position: relative;
+    height: 100vh;
+    /* altura ventana*/
+    background-image: url(/img/bg.jpg);
+    /* imagen de fondo */
+    background-size: cover !important;
+    /*cubre el contenedor*/
+    background-position: center;
+    background-attachment: fixed;
+    /* efecto paralaje*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.header-my .header-content .titulo {
+    font-size: 5rem;
+    margin: 35px;
+}
+
+.header-my .header-content .cta {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/*Barnav*/
+.nav-my {
+    position: absolute;
+    /*fusionada con la imagen*/
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent !important;
+    /*fondo transparente*/
+    transition: background 0.3s ease;
+}
+
+.nav-my .dropdown-menu {
+    background: transparent !important;
+}
+
+.nav-my .nav-link,
+.nav-my .dropdown-toggle,
+.nav-my .dropdown-item {
+    color: white;
+}
+
+.nav-my .input-my {
+    background: transparent !important;
+}
+
+/* Cuando la barra se queda fija */
+.sticky {
+    position: fixed;
+    top: 0;
+    background: white !important;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.sticky .nav-link,
+.sticky .dropdown-toggle,
+.nav-my .dropdown-item {
+    color: #000;
+}
+
+.sticky .form-control.input-my {
+    background: fff;
+    color: #000;
+    border-color: #000;
+}
+
+.sticky .btn {
+    background: #2fb4cc;
+    color: #fff;
+    border-color: 2fb4cc;
+}
+
+.sticky .dropdown-menu {
+    background: white !important;
+}
+
+/* boton nav */
+.sticky .d-flex button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.nav-link .form-control.input-my {
+    background: transparent;
+    border-color: white;
+    color: #fff;
+}
+
+.nav-my .btn {
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+}
+
+.d-flex button:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+a.logo {}
+
+a.logo img.primary {}
+
+a.logo img.secondary {
+    display: none;
+}
+
+a.logo img {
+    width: 100%;
+    height: 70px;
+}
+
+/* cards */
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    /* Espaciado  entre tarjetas */
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title-cards {
+    font-size: 2.5rem;
+    /* Ajusta el tamaño de la fuente */
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-align: center;
+    /* Centra el título */
+    display: block;
+    /* Asegura que el h2 se comporte como bloque */
+    width: 100%;
+    /* Asegura que ocupe todo el ancho disponible */
+}
+
+.services {
+    display: block;
+    /* Asegura que la sección .services esté en bloque */
+    text-align: center;
+    /* Centra todos los elementos dentro de .services */
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .4);
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    /* Ajusta la altura de las imágenes */
+    object-fit: cover;
+    /* Asegura que las imágenes mantengan proporción */
+}
+
+.card .contenido {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    /* Toma el espacio restante */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card .contenido p {
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: 15px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+.link-registro {
+    margin-bottom: 40px;
+}
+
+/* corousel */
+
+.carousel-inner {
+    max-height: 100%;
+    /* Ajustar tamaño, max-width: para el ancho */
+    margin: auto;
+    /* Centra el objeto */
+}
+
+.carousel_img img {
+    width: 650px;
+    height: 700px;
+}
+
+/* about */
+.about {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contentblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* ajustar tamaño de imagen */
+}
+
+.text {
+    margin-left: 50px;
+}
+
+.text h2 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.imageblock img {
+    width: 500px;
+    height: 400px;
+}
+
+/*contact*/
+.contact {
+    background-color: #e0e0e0;
+    /* color de fondo */
+    padding: 40px 20px;
+}
+
+.contact conainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form form {
+    display: grid;
+    max-width: 500px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    grid-column: 1 / 3;
+    /* hace que ocupe ambas columnas */
+    height: 100px;
+}
+
+.contact-form button {
+    grid-column: 1 / 3;
+    /* hace que ocupe ambas columnas */
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 400ms ease
+}
+
+.contact-form button:hover {
+    background: #2fb4cc;
+    color: #fff;
+}
+
+/* redes sociales */
+.social-container {
+    display: flex;
+    height: 12vh;
+    /* ocupar espacio en pantalla   */
+    align-items: center;
+    justify-content: center;
+}
+
+.social-container ul li {
+    display: inline-block;
+    /*  alinea horizontalmente  */
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    /*  se alinea elelemento a en este caso */
+}
+
+.social-container ul li a {
+    display: block;
+    /* ocupar espacio que deben ocupar */
+    padding: 0 10px;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.social-container ul:hover a {
+    filter: blur(2px);
+}
+
+.social-container ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.social-container ul li .facebook:hover {
+    background: var(--facebook);
+}
+
+.social-container ul li .instagram:hover {
+    background: var(--instagram);
+}
+
+.social-container ul li .linkedin:hover {
+    background: var(--linkedin);
+}
+
+/* globales*/
+
+.custom-text {
+    color: white !important;
+    /* Cambia el color de texto según tus necesidades */
+}
+
+.title-separator::after {
+    content: "";
+    display: block;
+    width: 150px;
+    /* Largo de la línea */
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #000;
+    /* Color de la línea */
+    margin: 50px auto;
+    /* Espacio y centrado debajo del título */
+}
+
+/*link registro*/
+.link-registro .cta {
+    font-size: 1.5rem;
+    color: #2fb4cc;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+@media(max-width:1366px) {}
+
+@media(max-width: 1100px) {
+    .card {
+        width: calc(50% - 20px);
+        /* Ajusta las tarjetas para pantallas medianas */
+    }
+}
+
+@media(max-width: 768px) {
+    .card {
+        width: 100%;
+        /* Ajusta las tarjetas para pantallas pequeñas */
+    }
+}
